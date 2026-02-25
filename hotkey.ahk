@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 
 ; deletion
@@ -15,3 +15,7 @@
 !+Left::Send("+{Home}") ; select to beginning of line, similar to command + shift + left in macOS
 !+Right::Send("+{End}") ; select to end of line, similar to command + shift + right in macOS
 
+
+; horizontal scrolling
++WheelUp::Send("{WheelLeft}") ; hold shift and scroll up to scroll left on screen
++WheelDown::Send("{WheelRight}") ; hold shift and scroll right to scroll right on screen
